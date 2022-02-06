@@ -1,0 +1,13 @@
+.signup {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  margin-top: 15px;
+  height: 40vh;
+  font-size: 20px;
+  font-weight: 700;
+  background-image: image("./pics/nature.jpg");
+}
