@@ -28,21 +28,26 @@ const App = () => {
     } else {
       setCartItems.map((item) =>
         item.id === product.id
-          ? { ...ProductExist, quantity: ProductExist.quantity - 1 }
+          ? { ...ProductExist, quantity: ProductExist.quantity-1 }
           : item
       );
     }
   };
 
+  const handleCartClearance = () => {
+    setCartItems([]);
+  };
+
   return (
     <div>
       <BrowserRouter>
-        <Header />
+        <Header cartItems={cartItems} />
         <Routes
           productItems={productItems}
           cartItems={cartItems}
           handleAddProduct={handleAddProduct}
           handleRemoveProduct={handleRemoveProduct}
+          handleCartClearance={handleCartClearance}
         />
       </BrowserRouter>
     </div>

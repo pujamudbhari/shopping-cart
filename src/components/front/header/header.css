@@ -11,7 +11,7 @@
   background-color: black;
 }
 .logo {
-  text-decoration:none;
+  text-decoration: none;
   text-transform: uppercase;
   color: white;
   padding-left: 40px;
@@ -30,7 +30,17 @@
   color: white;
   padding: 0px 15px;
 }
-.header-links ul li a:hover{
-    color:rgb(153, 153, 0);
-
+.header-links ul li a:hover {
+  color: rgb(153, 153, 0);
+}
+.cart {
+  padding-right: 10px;
+  margin-right: 20px;
+}
+.cart-length {
+  margin: 3px;
+  font-size: 15px;
+  font-weight: 700;
+  vertical-align: super;
+  color: orange;
 }

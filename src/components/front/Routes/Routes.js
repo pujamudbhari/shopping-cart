@@ -9,6 +9,7 @@ const Routes = ({
   cartItems,
   handleAddProduct,
   handleRemoveProduct,
+  handleCartClearance,
 }) => {
   return (
     <div>
@@ -27,6 +28,7 @@ const Routes = ({
             cartItems={cartItems}
             handleAddProduct={handleAddProduct}
             handleRemoveProduct={handleRemoveProduct}
+            handleCartClearance={handleCartClearance}
           />
         </Route>
       </Switch>
