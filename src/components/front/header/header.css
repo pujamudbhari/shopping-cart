@@ -8,7 +8,8 @@
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  background-color: black;
+  background-color: rgb(134, 96, 25);
+  margin-top: 5px;
 }
 .logo {
   text-decoration: none;

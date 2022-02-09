@@ -1,5 +1,8 @@
+.body {
+  background-color: black;
+}
 .cart-items {
-  margin: 30px auto;
+  margin: 50px auto;
   width: 80%;
   background-color: orange;
   border: 3px solid black;

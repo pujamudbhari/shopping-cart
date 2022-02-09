@@ -3,6 +3,7 @@ import data from "./components/back/Data/Data";
 import Header from "./components/front/header/header";
 import { BrowserRouter } from "react-router-dom";
 import Routes from "./components/front/Routes/Routes";
+import "./App.css";
 
 const App = () => {
   const { productItems } = data;
@@ -26,10 +27,12 @@ const App = () => {
     if (ProductExist.quantity === 1) {
       setCartItems(cartItems.filter((item) => item.id !== product.id));
     } else {
-      setCartItems.map((item) =>
-        item.id === product.id
-          ? { ...ProductExist, quantity: ProductExist.quantity-1 }
-          : item
+      setCartItems(
+        cartItems.map((item) =>
+          item.id === product.id
+            ? { ...ProductExist, quantity: ProductExist.quantity - 1 }
+            : item
+        )
       );
     }
   };
@@ -39,7 +42,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div style={{ background: "" }}>
       <BrowserRouter>
         <Header cartItems={cartItems} />
         <Routes

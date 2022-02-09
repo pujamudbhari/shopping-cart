@@ -8,7 +8,7 @@ const Header = (cartItems) => {
       <div>
         <h1>
           <Link to="/" className="logo">
-            Electronics Shop
+            Puja's Shop
           </Link>
         </h1>
       </div>
@@ -20,7 +20,7 @@ const Header = (cartItems) => {
         </ul>
         <ul>
           <li>
-            <Link to="/signup">Signup</Link>
+            <Link to="/signup">SignIn</Link>
           </li>
         </ul>
         <ul>
